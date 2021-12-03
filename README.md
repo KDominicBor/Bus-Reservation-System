@@ -1,13 +1,5 @@
 <h1 align="center">Bus Reservation System</h1>
 
-<p align="center">
-<img style="padding:10px;" src="https://img.shields.io/badge/Open%20Source-💕%20-9cf?style=for-the-badge"><br>
-<img style="padding:10px;" src="https://img.shields.io/github/contributors/souravmondaldev/Bus-Reservation-System?style=flat-square">
-<img style="padding:10px;" src="https://img.shields.io/github/forks/souravmondaldev/Bus-Reservation-System?label=Forks&style=flat-square">
-<img style="padding:10px;" src="https://img.shields.io/github/stars/souravmondaldev/Bus-Reservation-System?style=flat-square">
-<img style="padding:10px;" src="https://img.shields.io/github/languages/count/souravmondaldev/Bus-Reservation-System?style=flat-square">
-<img style="padding:10px;" src="https://img.shields.io/github/license/souravmondaldev/Bus-Reservation-System?style=flat-square">
-
 
 This is a simple Bus Reservation System programmed using Cpp .This program allows you to add bus details,then you can reserve a bus seat according to vacant seat available.One can check for list for vacant seats in a bus.It also allows you to see the available bus for now.
 This is a simple implementation of c++ code using class and structure. 
@@ -23,8 +15,16 @@ a.exe # windows
 ```
 Normal Input/Output format for the code:
 ```C
-souravmondal@sourav-pc:~/Documents$ g++ smBusRes.cpp
-souravmondal@sourav-pc:~/Documents$ ./a.out
+
+sirbor@Dominics-MacBook-Pro ~ % cd Bus
+sirbor@Dominics-MacBook-Pro Bus % cd Bus-Reservation-System
+sirbor@Dominics-MacBook-Pro Bus-Reservation-System % ls
+LICENSE					busResOutput
+README.md				busReservation.cpp
+Screenshot from 2019-09-16 21-52-39.png	sm.png
+a.out
+sirbor@Dominics-MacBook-Pro Bus-Reservation-System % g++ busReservation.cpp
+sirbor@Dominics-MacBook-Pro Bus-Reservation-System % ./a.out
 ---------------------------------------------------------------------------
 				****SM Bus Travel Agency****
 
@@ -44,15 +44,15 @@ souravmondal@sourav-pc:~/Documents$ ./a.out
 ***************************************************************************
 Enter bus no: 123
 
-Enter Driver's name: Sam
+Enter Driver's name: Peter
 
-Arrival time : 12:05AM
+Arrival time : 10:15AM
 
-Departure: 12:20AM
+Departure: 10:25AM
 
-From: 			HJK
+From: 			NAIROBI
 
-To: 			LKI
+To: 			KIAMBU
 
 ***************************************************************************
 
@@ -68,15 +68,15 @@ To: 			LKI
 ***************************************************************************
 Enter bus no: 245
 
-Enter Driver's name: Josh
+Enter Driver's name: Paul
 
-Arrival time : 01:15PM
+Arrival time : 10:58AM
 
-Departure: 01:30PM
+Departure: 11:04AM
 
-From: 			KLO
+From: 			THIKA
 
-To: 			PKL
+To: 			KIAMBU
 
 ***************************************************************************
 
@@ -92,14 +92,14 @@ To: 			PKL
 ***************************************************************************
 ***************************************************************************
 Bus no: 	123
-Driver: 	Sam		Arrival time: 	12:05AM	Departure Time: 	12:20AM
-From: 		HJK		To: 			LKI
+Driver: 	Peter		Arrival time: 	10:15AM	Departure Time: 	10:25AM
+From: 		NAIROBI		To: 			KIAMBU
 ***************************************************************************
 ___________________________________________________________________________
 ***************************************************************************
 Bus no: 	245
-Driver: 	Josh		Arrival time: 	01:15PM	Departure Time: 	01:30PM
-From: 		KLO		To: 			PKL
+Driver: 	Paul		Arrival time: 	10:58AM	Departure Time: 	11:04AM
+From: 		THIKA		To: 			KIAMBU
 ***************************************************************************
 ___________________________________________________________________________
 
@@ -119,8 +119,8 @@ Enter bus no: 123
 ***************************************************************************
 
 Bus no: 	123
-Driver: 	Sam		Arrival time: 	12:05AM	Departure time:12:20AM
-From: 		HJK		To: 		LKI
+Driver: 	Peter		Arrival time: 	10:15AM	Departure time:10:25AM
+From: 		NAIROBI		To: 		KIAMBU
 ***************************************************************************
 
     1.     Empty    2.     Empty    3.     Empty    4.     Empty
@@ -145,13 +145,10 @@ There are 32 seats empty in Bus No: 123
 
 			Enter your choice:-> 2
 ***************************************************************************
-Bus no: 123
+Bus no: 245
 
-Seat Number: 36
-
-There are only 32 seats available in this bus.
-Seat Number: 32
-Enter passanger's name: Mike
+Seat Number: 31
+Enter passanger's name: Sirbor
 
 ***************************************************************************
 
@@ -165,12 +162,12 @@ Enter passanger's name: Mike
 
 			Enter your choice:-> 3
 ***************************************************************************
-Enter bus no: 123
+Enter bus no: 245
 ***************************************************************************
 
-Bus no: 	123
-Driver: 	Sam		Arrival time: 	12:05AM	Departure time:12:20AM
-From: 		HJK		To: 		LKI
+Bus no: 	245
+Driver: 	Paul		Arrival time: 	10:58AM	Departure time:11:04AM
+From: 		THIKA		To: 		KIAMBU
 ***************************************************************************
 
     1.     Empty    2.     Empty    3.     Empty    4.     Empty
@@ -180,10 +177,10 @@ From: 		HJK		To: 		LKI
    17.     Empty   18.     Empty   19.     Empty   20.     Empty
    21.     Empty   22.     Empty   23.     Empty   24.     Empty
    25.     Empty   26.     Empty   27.     Empty   28.     Empty
-   29.     Empty   30.     Empty   31.     Empty   32.      Mike
+   29.     Empty   30.     Empty   31.    Sirbor   32.     Empty
 
-There are 31 seats empty in Bus No: 123
-The seat no 32 is reserved for Mike.
+There are 31 seats empty in Bus No: 245
+The seat no 31 is reserved for Sirbor.
 ***************************************************************************
 
 
@@ -198,7 +195,9 @@ The seat no 32 is reserved for Mike.
 ***************************************************************************
 Successfully Logged out from the Application. Visit Again!
 <Thanks You :)>
-Created By Sourav Mondal
+Created By Dominic Bor
+sirbor@Dominics-MacBook-Pro Bus-Reservation-System % 
+
 ```
 
 ## Usage
@@ -218,14 +217,3 @@ Created By Sourav Mondal
 
   void position(int i); #to get the all reserved bus seats
 ```
-## Cons
-```file handling``` not added. A file system can make this block of code more reusable and complete. Any PR for ```file handling``` 
-solution is appriciated 😊.
-
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-Please make sure to update tests as appropriate. Feel free to contact here: souravmondal0341@gmail.com
-
-## Credits
-[SouravMondal](https://github.com/souravmondaldev)
