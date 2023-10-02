@@ -3,7 +3,7 @@
 using namespace std;
 
 /* p variable keeps track of number of bus available at the moment.
-If we have added 5 buses then p will be 5. Used as index of bus array. Intially no bus in the system, so p=0
+If we have added 5 buses then p will be 5. Used as index of bus array. Initially no bus in the system, so p=0
 */
 int p = 0;   
 
@@ -23,18 +23,18 @@ public:
 
   void addNewBus(); // Adds a New Bus with its details
 
-  void allotmentOfSeatToPassenger(); // Used to allot seatNumber to passenger from availbale buses
+  void allotmentOfSeatToPassenger(); // Used to allot seatNumber to passenger from available buses
 
-  void empty();     // Used to intilialize all bus seats as vacent
+  void empty();     // Used to initialize all bus seats as vacant
 
-  void showAvailableBusSeats();      //shows avialble bus seats from a bus
+  void showAvailableBusSeats();      //shows available bus seats from a bus
 
-  void showAvailableBuses();     //shows all avialable buses
+  void showAvailableBuses();     //shows all available buses
 
   void showReservedBusSeats(int i); //to get the all reserved bus seats from a bus
 
 }
-bus[25]; // Bus is aa rray of class with max size of 25 buses.
+bus[25]; // Bus is an array of class with max size of 25 buses.
 
 /* Dummy function used to add lines of `*` to separate and clean output*/
 void vline(char ch)
@@ -130,7 +130,7 @@ void a::allotmentOfSeatToPassenger()
 
       {
 
-        cout<<"Enter passanger's name: ";
+        cout<<"Enter passenger's name: ";
 
         cin>>bus[n].seat[seat/4][(seat%4)-1];
 
@@ -353,7 +353,7 @@ int main()
   //Choice will be users input to use different functionality over system using switch 
   int choice;
   vline('-');
-  cout<<"\t\t\t\t****SM Bus Travel Agency****"<<endl<<endl;
+  cout<<"\t\t\t\t****BookPass Travel Agency****"<<endl<<endl;
   vline('-');
   while(1)
   {
